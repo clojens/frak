@@ -20,6 +20,7 @@
                        {:id "prod"
                         :source-paths ["src/clj" "src/cljs"]
                         :compiler {:output-to "bin/frak.prod.js"
-                                   :optimizations :simple
+                                   :externs ["resources/externs/process.js"]
+                                   :optimizations :advanced
                                    :pretty-print false
                                    :target :nodejs}}]})
